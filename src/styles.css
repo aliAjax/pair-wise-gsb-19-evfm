@@ -260,6 +260,250 @@ input {
   line-height: 1.6;
 }
 
+select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 12px;
+  background: #ffffff;
+  color: #172033;
+  font: inherit;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+aside {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.tank-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.tank-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fbfdff;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.tank-card header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tank-card footer {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tank-card footer button,
+.batch-actions button {
+  min-height: 34px;
+  font-size: 13px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+}
+
+.badge.quarantine {
+  color: #0e7490;
+  background: #ecfeff;
+  border-color: #a5f3fc;
+}
+
+.badge.display {
+  color: #15803d;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.badge.danger {
+  color: #be123c;
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+.badge.waiting {
+  color: #b45309;
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.tank-params {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.tank-params label {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.tank-params input {
+  min-height: 34px;
+  padding: 0 8px;
+}
+
+.occupancy {
+  display: grid;
+  gap: 6px;
+}
+
+.occupancy .bar {
+  height: 8px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.occupancy .bar i {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+.occupancy span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.warn-text {
+  color: #b45309;
+  font-size: 13px;
+  margin: 0;
+}
+
+.reason {
+  color: #be123c;
+  font-size: 13px;
+  margin: 0;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 6px;
+  padding: 8px 10px;
+  line-height: 1.6;
+}
+
+.error-text {
+  color: #be123c;
+  font-size: 13px;
+  margin: 0;
+}
+
+.empty {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.queue-column {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.batch-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fbfdff;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.batch-card:last-child {
+  margin-bottom: 0;
+}
+
+.batch-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.batch-meta {
+  margin: 0;
+  color: #526070;
+  font-size: 14px;
+}
+
+.batch-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.batch-actions select {
+  width: auto;
+  min-width: 200px;
+  min-height: 34px;
+  font-size: 13px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.form-grid .pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-grid .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #526070;
+}
+
+.form-grid .check input {
+  width: auto;
+  min-height: 0;
+}
+
+.note-line {
+  display: grid;
+  gap: 6px;
+}
+
+.note-line input {
+  min-height: 36px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media (max-width: 860px) {
   .hero,
   .workspace,
